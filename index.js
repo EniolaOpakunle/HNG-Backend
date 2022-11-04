@@ -22,7 +22,7 @@ app.post("/", (req, res)=>{
     }else{
         result;
     }
-    res.status(200).json({slackUsername:'Eniola Opakunle', result: parseInt(result), operation_type: operation_type , })
+    res.status(200).json({slackUsername:'Eniola Opakunle', result: parseInt(result), operation_type: operation , })
 })
 const PORT = process.env.port || 2300
 app.listen(PORT, ()=>{
